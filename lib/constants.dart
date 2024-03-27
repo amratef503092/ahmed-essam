@@ -1,0 +1,77 @@
+// ignore_for_file: constant_identifier_names
+import 'package:flutter/material.dart';
+import 'dart:io';
+
+// const BASE_URL = 'https://fawzyzannon.com';
+var BASE_URL = "https://mrahmedessam.com";
+// const String BASE_URL = 'http://3m-physics.com';
+// const String BASE_URL = "https://thewahy.com";
+// const BASE_URL = 'https://nata3lm.com';
+// const String BASE_URL = "https://mrahmedessam.com";
+// const String BASE_URL = 'https://zaakr.net';
+
+// Please Don not chnage this pleas i use it to upload in IOS dont touch it and dont remove it plz
+bool isIOS = Platform.isIOS;
+DateTime inReviewDate = DateTime(2024, 3, 17);
+
+bool inReview = DateTime.now().isBefore(inReviewDate) && isIOS;
+
+// list of colors that we use in our app
+const kBackgroundColor = Color(0xFFF5F9FA);
+const kPrimaryColor = Color(0xff003b74);
+const kDarkButtonBg = Color(0xFF273546);
+const kSecondaryColor = Color(0xFF808080);
+const kSelectItemColor = Color(0xFF000000);
+const kRedColor = Color(0xFFEC5252);
+const kBlueColor = Color(0xFF68B0FF);
+const kGreenColor = Color(0xFF43CB65);
+const kGreenPurchaseColor = Color(0xFF2BD0A8);
+const kToastTextColor = Color(0xFFEEEEEE);
+const kTextColor = Color(0xFF273242);
+const kTextLightColor = Color(0xFF000000);
+const kTextLowBlackColor = Colors.black38;
+const kStarColor = Color(0xFFEFD358);
+const kDeepBlueColor = Color(0xFF594CF5);
+const kTabBarBg = Color(0xFFEEEEEE);
+const kDarkGreyColor = Color(0xFF757575);
+const kTextBlueColor = Color(0xFF5594bf);
+const kTimeColor = Color(0xFF366cc6);
+const kTimeBackColor = Color(0xFFe3ebf5);
+const kLessonBackColor = Color(0xFFf8e5d2);
+// const kLightBlueColor = Color(0xFFE7EEFE);
+const kLightBlueColor = Color(0xFF4AA8D4);
+const kFormInputColor = Color(0xFFc7c8ca);
+const kNoteColor = Color(0xFFbfdde4);
+const kLiveClassColor = Color(0xFFfff3cd);
+const kSectionTileColor = Color(0xFFdddcdd);
+// Color of Categories card, long arrow
+const iCardColor = Color(0xFFF4F8F9);
+const iLongArrowRightColor = Color(0xFF559595);
+
+const kDefaultInputBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.all(Radius.circular(12.0)),
+  borderSide: BorderSide(color: Colors.white, width: 2),
+);
+
+const kDefaultFocusInputBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.all(Radius.circular(12.0)),
+  borderSide: BorderSide(color: kBlueColor, width: 2),
+);
+const kDefaultFocusErrorBorder = OutlineInputBorder(
+  borderSide: BorderSide(color: kRedColor),
+  borderRadius: BorderRadius.all(Radius.circular(12.0)),
+);
+
+// our default Shadow
+const kDefaultShadow = BoxShadow(
+  offset: Offset(20, 10),
+  blurRadius: 20,
+  color: Colors.black12, // Black color with 12% opacity
+);
+
+enum CoursesPageData {
+  Category,
+  Filter,
+  Search,
+  All,
+}
