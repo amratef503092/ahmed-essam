@@ -37,8 +37,7 @@ import 'screens/tabs_screen.dart';
 import 'package:root_checker_plus/root_checker_plus.dart';
 import 'package:bot_toast/bot_toast.dart';
 
-void main() async 
-{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Logger.root.onRecord.listen((LogRecord rec) {
     debugPrint(
@@ -152,18 +151,18 @@ class _MyAppState extends State<MyApp> {
           title: 'Mr Ahmed Essam',
 
           locale: const Locale('ar'),
-          
+
           theme: ThemeData(
             fontFamily: 'NotoSans',
             // fontFamily: 'Tajawal',
             useMaterial3: true,
             visualDensity: VisualDensity.adaptivePlatformDensity,
             dialogBackgroundColor: kBackgroundColor,
-          
+
             colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue)
                 .copyWith(secondary: kDarkButtonBg),
           ),
-          debugShowCheckedModeBanner: true,
+          debugShowCheckedModeBanner: false,
           home: const SplashScreen(),
           getPages: [
             GetPage(
