@@ -3,6 +3,7 @@
 import 'dart:convert';
 
 import 'package:three_m_physics/constants.dart';
+import 'package:three_m_physics/screens/auth_screen.dart';
 import 'package:three_m_physics/screens/auth_screen_private.dart';
 import 'package:flutter/material.dart';
 import '../providers/shared_pref_helper.dart';
@@ -61,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
           } else {
             Navigator.of(context).pushReplacement(
               MaterialPageRoute(
-                  builder: (context) => const AuthScreenPrivate()),
+                  builder: (context) => const AuthScreen()),
             );
           }
         }

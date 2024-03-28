@@ -37,7 +37,8 @@ import 'screens/tabs_screen.dart';
 import 'package:root_checker_plus/root_checker_plus.dart';
 import 'package:bot_toast/bot_toast.dart';
 
-void main() async {
+void main() async 
+{
   WidgetsFlutterBinding.ensureInitialized();
   Logger.root.onRecord.listen((LogRecord rec) {
     debugPrint(
@@ -174,7 +175,7 @@ class _MyAppState extends State<MyApp> {
           routes: {
             '/home': (ctx) => const TabsScreen(),
             AuthScreen.routeName: (ctx) => const AuthScreen(),
-            AuthScreenPrivate.routeName: (ctx) => const AuthScreenPrivate(),
+            // AuthScreenPrivate.routeName: (ctx) => const AuthScreenPrivate(),
             SignUpScreen.routeName: (ctx) => const SignUpScreen(),
             ForgotPassword.routeName: (ctx) => const ForgotPassword(),
             CoursesScreen.routeName: (ctx) => const CoursesScreen(),
